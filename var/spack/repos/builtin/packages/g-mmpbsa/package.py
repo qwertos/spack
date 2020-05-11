@@ -40,7 +40,7 @@ class GMmpbsa(CMakePackage):
 
     # FIXME: Add dependencies if required.
     # depends_on('foo')
-    depends_on('gromacs@4.5:4.6.999,5.0:5.1.999~double_precision')
+    depends_on('gromacs@4.5:4.6.999,5.0:5.1.999~double_precision~cuda')
 
     def cmake_args(self):
         # FIXME: Add arguments other than
