@@ -36,6 +36,7 @@ class GMmpbsa(CMakePackage):
 
     # FIXME: Add proper versions and checksums here.
     # version('1.2.3', '0123456789abcdef0123456789abcdef')
+    version('master', branch='master')
 
     # FIXME: Add dependencies if required.
     # depends_on('foo')
