@@ -40,10 +40,15 @@ class GMmpbsa(CMakePackage):
 
     # FIXME: Add dependencies if required.
     # depends_on('foo')
+    depends_on('gromacs@4.5:4.6.999,5.0:5.1.999')
 
     def cmake_args(self):
         # FIXME: Add arguments other than
         # FIXME: CMAKE_INSTALL_PREFIX and CMAKE_BUILD_TYPE
         # FIXME: If not needed delete this function
+        spec = self.spec
         args = []
+        
+        args.append('-DGROMACS_LIBRARY={0}'.format(spec['gromacs'].prefix.lib))
+
         return args
