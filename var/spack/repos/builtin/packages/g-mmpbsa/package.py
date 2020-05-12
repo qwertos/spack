@@ -49,6 +49,7 @@ class GMmpbsa(CMakePackage):
         spec = self.spec
         args = []
         
-        args.append('-DGROMACS_LIBRARY={0}'.format(spec['gromacs'].prefix.lib))
+        args.append('-DGMX_PATH={0}'.format(spec['gromacs'].prefix))
+        args.append('-DAPBS_INSTALL={0}'.format(spec['apbs'].prefix))
 
         return args
