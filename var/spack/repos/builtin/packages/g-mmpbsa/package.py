@@ -24,10 +24,12 @@ from spack import *
 
 
 class GMmpbsa(CMakePackage):
-    """FIXME: Put a proper description of your package here."""
+    """The tool calculates components of binding energy using
+    MM-PBSA method except the entropic term and energetic
+    contribution of each residue to the binding using energy
+    decomposition scheme."""
 
-    # FIXME: Add a proper url for your package's homepage here.
-    homepage = "https://www.example.com"
+    homepage = "https://rashmikumari.github.io/g_mmpbsa/"
     git      = "https://github.com/RashmiKumari/g_mmpbsa"
 
     # FIXME: Add a list of GitHub accounts to
